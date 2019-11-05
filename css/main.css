@@ -5,7 +5,11 @@ html {
 }
 
 main {
-  height: 125em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+  padding: 0 10px 10px 10px;
 }
 
 body {
@@ -101,4 +105,58 @@ body {
   .hamburguer-button {
     display: none;
   }
+}
+
+/* Main */
+main > article {
+  height: 15.5em;
+  width: 27.3em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main > article:nth-of-type(1) {
+  height: auto;
+  width: auto;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background-image: url("../img/main-1.jpg");
+}
+
+main > article:nth-of-type(2) {
+  background-image: url("../img/main-2.jpg");
+  justify-content: flex-end;
+}
+
+main > article:nth-of-type(3) {
+  background-image: url("../img/main-3.jpg");
+  justify-content: flex-end;
+}
+
+main > article:nth-of-type(1) > span {
+  align-self: flex-end; 
+}
+main > article:nth-of-type(1n+2) > div {
+  font-size: 10px;
+}
+main > article > div > h2 {
+  font-size: 3.5em;
+}
+main > article > div > ul {
+  display: flex;
+}
+main > article > div > ul > li {
+  padding-left: .5em;
+}
+main > article > div > ul > li > a:link{
+  color: hsla(0,0%,100%,.6);
+}
+main > article > div > ul > li > a:visited{
+  color: hsla(0,0%,100%,.6);
 }
