@@ -1,6 +1,11 @@
 /* raw elements */
+
 html {
   font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+
+main {
+  height: 125em;
 }
 
 body {
@@ -58,10 +63,12 @@ body {
   font-size: 1.09em;
   font-family: 'Roboto';
   font-weight: 500;
+  position: sticky;
+
 }
 
 .nav-top:nth-last-of-type(1) > div {
-  height: 3em;
+  height: 100%;
 }
 
 .nav-top:nth-last-of-type(1) > div > ul {
@@ -74,4 +81,24 @@ body {
 
 .nav-top:nth-last-child(1) > div > ul > li > a:link:hover {
   color: #000;
+}
+
+.nav-top:nth-last-child(1) > div > a {
+  display: block;
+  align-content: center;
+  width: auto;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #eee;
+  font-size: 1.07em;
+  font-weight: 500;
+  color: #aaa;
+}
+
+/* hamburguer button top nav */
+
+@media screen and (min-width: 767px ) {
+  .hamburguer-button {
+    display: none;
+  }
 }
