@@ -17,7 +17,37 @@ body {
 
 /* General classes */
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.navs-li {
+  text-align: center;
+  padding-right: 1em;
+}
+
+.navs-ul {
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.81em;
+}
+
+.border-thin-eee {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #eee;
+}
+
 /* Header */
+
+/* nav-top */
 
 .nav-top {
   height: 2em;
@@ -26,12 +56,10 @@ body {
 }
 
 .nav-top > div:nth-child(1) {
-  float: left;
   padding-left: 1.5em;
 }
 
 .nav-top > div:nth-child(2) {
-  float: right;
   padding-right: 0.5em;
 }
 
@@ -59,26 +87,29 @@ body {
 
 /* styling of fixed nav bar */
 
-.nav-top:nth-last-of-type(1) {
+.nav-sticky {
   height: 3em;
   background: #fff;
   font-family: "Roboto";
   font-weight: 500;
   position: sticky;
   font-size: 115%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
-.nav-top:nth-last-of-type(1) > div {
-  grid-template-columns: 1fr 1fr;
+.nav-sticky > div {
   background: #fff;
+  width: auto;
   font-family: "Exo 2";
   font-weight: 500;
-  position: sticky;
   margin-top: 0.2em;
 }
 
-.nav-top:nth-last-of-type(1) > div:nth-last-child(1) {
+.nav-sticky > div:nth-last-child(1) {
   height: 3em;
   width: 3em;
   display: flex;
@@ -87,19 +118,28 @@ body {
   margin: 0;
 }
 
-.nav-top:nth-last-of-type(1) > div > ul {
+.nav-sticky > div > ul {
   height: 3em;
+  margin-left: 1.5em;
 }
 
-.nav-top:nth-last-child(1) > div > ul > li > a:link {
+.nav-sticky > div > ul > li > a:link {
   color: #aaa;
 }
 
-.nav-top:nth-last-child(1) > div > ul > li > a:link:hover {
+.nav-sticky > div > ul > li > a:visited {
+  color: #aaa;
+}
+
+.nav-sticky > div > ul > li > a:visited:hover {
   color: #000;
 }
 
-.nav-top:nth-last-child(1) > div > a {
+.nav-sticky > div > ul > li > a:link:hover {
+  color: #000;
+}
+
+.nav-sticky > div > a {
   background-color: #fff;
   font-size: 113%;
   font-weight: 500;
@@ -141,31 +181,30 @@ body {
     display: none;
   }
   
+  .nav-sticky {
+    justify-content: flex-end;
+  }
+  
   .hamburguer-button {
     display: block;
-    border-style: none;
+    border-style: none none none solid;
     background-color: rgba(255, 255, 255, 0);
     height: 3em;
     width: 3em;
     color: #f42;
+    font-size: 105%;
     padding: 0;
-    border-left-style: solid;
-    border-left-width: thin;
-    border-left-color: #eee;
   }
   
   #test-div {
     padding: 0;
     height: 3em;
     width: 6em;
-    border-left-style: solid;
-    border-left-width: thin;
-    border-left-color: #eee;
-    justify-content: space-between;
   }
   
   #test-div > a {
-    padding-left: 0.8em;
+    width: 3em;
+    text-align: center;
   }
   
 }
