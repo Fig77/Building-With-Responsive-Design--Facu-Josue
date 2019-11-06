@@ -131,7 +131,7 @@ main > article:nth-of-type(1) {
   position: relative;
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,0.25) url(../img/image-gradient.png);
+  background: rgba(255,255,255,0.01) url(../img/image-gradient.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -198,7 +198,7 @@ main > article:nth-of-type(3) > .div-container{
 main > article:nth-of-type(1n+2) > div {
   font-size: 10px;
 }
-main > article > div > div > h2 {
+.div-container > div > h2 {
   font-size: 3.5em;
 }
 .div-container > div:nth-of-type(1n+1) > ul {
