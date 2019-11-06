@@ -1,7 +1,9 @@
+/* Font Face */
+
 /* raw elements */
 
 html {
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: "Open Sans", "Roboto", "Exo 2", sans-serif;
 }
 
 main {
@@ -19,7 +21,37 @@ body {
 
 /* General classes */
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.navs-li {
+  text-align: center;
+  padding-right: 1em;
+}
+
+.navs-ul {
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.81em;
+}
+
+.border-thin-eee {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #eee;
+}
+
 /* Header */
+
+/* nav-top */
 
 .nav-top {
   height: 2em;
@@ -28,12 +60,10 @@ body {
 }
 
 .nav-top > div:nth-child(1) {
-  float: left;
   padding-left: 1.5em;
 }
 
 .nav-top > div:nth-child(2) {
-  float: right;
   padding-right: 0.5em;
 }
 
@@ -52,59 +82,87 @@ body {
 }
 
 .nav-top-divs > li > a:link {
-  color: hsla(0, 0%, 100%, .6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .nav-top:nth-of-type(1) > div:nth-of-type(1) > ul > li:nth-child(1) > a:link {
   color: #fff;
 }
 
-/* styling of fixed nav bar */ 
+/* styling of fixed nav bar */
 
-.nav-top:nth-last-of-type(1) {
+.nav-sticky {
   height: 3em;
   background: #fff;
-  font-size: 1.09em;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 500;
   position: sticky;
-
+  font-size: 115%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
 }
 
-.nav-top:nth-last-of-type(1) > div {
-  height: 100%;
+.nav-sticky > div {
+  background: #fff;
+  width: auto;
+  font-family: "Exo 2";
+  font-weight: 500;
+  margin-top: 0.2em;
 }
 
-.nav-top:nth-last-of-type(1) > div > ul {
-  height: 100%;
+.nav-sticky > div:nth-last-child(1) {
+  height: 3em;
+  width: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
-.nav-top:nth-last-child(1) > div > ul > li > a:link {
+.nav-sticky > div > ul {
+  height: 3em;
+  margin-left: 1.5em;
+}
+
+.nav-sticky > div > ul > li > a:link {
   color: #aaa;
 }
 
-.nav-top:nth-last-child(1) > div > ul > li > a:link:hover {
+.nav-sticky > div > ul > li > a:visited {
+  color: #aaa;
+}
+
+.nav-sticky > div > ul > li > a:visited:hover {
   color: #000;
 }
 
-.nav-top:nth-last-child(1) > div > a {
-  display: block;
-  align-content: center;
-  width: auto;
-  height: 100%;
+.nav-sticky > div > ul > li > a:link:hover {
+  color: #000;
+}
+
+.nav-sticky > div > a {
   background-color: #fff;
-  border: 1px solid #eee;
-  font-size: 1.07em;
+  font-size: 113%;
   font-weight: 500;
   color: #aaa;
 }
 
 /* hamburguer button top nav */
 
-@media screen and (min-width: 767px ) {
-  .hamburguer-button {
+ .hamburguer-button {
     display: none;
   }
+
+/* Media queries */ 
+
+/* Desktop */
+
+@media screen and (min-width: 814px) {
+  
+  
 }
 
 /* Main */
@@ -213,3 +271,52 @@ main > article:nth-of-type(1n+2) > div {
 .div-container > div:nth-of-type(1n+1) > ul > li > a:visited{
   color: hsla(0,0%,100%,.6);
 }
+/* small screen */
+
+@media screen and (min-width: 747px) and (max-width: 813px) {
+
+  .hide-on-medium {
+    display: none;
+  }
+  
+}
+
+/* cell */
+
+/* TODO:  abstract border code of header to a class */
+
+@media screen and (max-width: 746px) {
+
+  .hide-on-small {
+    display: none;
+  }
+  
+  .nav-sticky {
+    justify-content: flex-end;
+  }
+  
+  .hamburguer-button {
+    display: block;
+    border-style: none none none solid;
+    background-color: rgba(255, 255, 255, 0);
+    height: 3em;
+    width: 3em;
+    color: #f42;
+    font-size: 105%;
+    padding: 0;
+  }
+  
+  #test-div {
+    padding: 0;
+    height: 3em;
+    width: 6em;
+  }
+  
+  #test-div > a {
+    width: 3em;
+    text-align: center;
+  }
+  
+}
+
+/* Rules that applies last */ 

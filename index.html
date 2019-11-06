@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/Normalize.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="js/jquery.js"></script>
@@ -16,49 +17,49 @@
 
 <body>
   <header>
-
-    <nav class="nav-top">
+    <nav class="nav-top hide-on-small">
       <div>
-        <ul class="nav-top-divs">
-          <li><a href="#">News</a></li>
-          <li><a href="#">Events ▾</a></li>
-          <li><a href="#">Events ▾</a></li>
-          <li><a href="#">Business ▾</a></li>
-          <li><a href="#">AMAs</a></li>
-          <li><a href="#">Spaces</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
+        <ul class="nav-top-divs left">
+          <li class="navs-li"><a href="#">News</a></li>
+          <li class="navs-li"><a href="#">Events ▾</a></li>
+          <li class="navs-li"><a href="#">Events ▾</a></li>
+          <li class="navs-li"><a href="#">Business ▾</a></li>
+          <li class="navs-li"><a href="#">AMAs</a></li>
+          <li class="navs-li"><a href="#">Spaces</a></li>
+          <li class="navs-li"><a href="#">Terms & Conditions</a></li>
         </ul>
       </div>
-      <div>
-        <ul class="nav-top-divs">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Advertise</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Contact</a></li>
+      <div class="hide-on-medium">
+        <ul class="nav-top-divs right">
+          <li class="navs-li"><a href="#">About</a></li>
+          <li class="navs-li"><a href="#">Team</a></li>
+          <li class="navs-li"><a href="#">Advertise</a></li>
+          <li class="navs-li"><a href="#">Jobs</a></li>
+          <li class="navs-li"><a href="#">Contact</a></li>
         </ul>
       </div>
 
     </nav>
-
-    <nav class="nav-top">
-      <div>
-        <ul class="nav-top-divs">
-          <li><a href="#">Latest</a></li>
-          <li><a href="#">Hard Fork</a></li>
-          <li><a href="#">Plugged</a></li>
-          <li><a href="#">Fundamentals</a></li>
-          <li><a href="#">Work 2030</a></li>
+  </header>
+  
+    <nav class="nav-sticky">
+      <div class="hide-on-small">
+        <ul class="nav-sticky-divs navs-ul">
+          <li class="navs-li"><a href="#">LATEST</a></li>
+          <li class="navs-li"><a href="#">HARD FORK</a></li>
+          <li class="navs-li"><a href="#">PLUGGED</a></li>
+          <li class="navs-li"><a href="#">FUNDAMENTALS</a></li>
+          <li class="navs-li"><a href="#">WORK 2030</a></li>
         </ul>
       </div>
-      <div>
+      <div class="border-thin-eee navs-ul" id="test-div">
         <a href="#">
           <i class="fas fa-search"></i>
         </a>
         
-        <button class="hamburguer-button">
+        <button class="hamburguer-button border-thin-eee">
+          <i class="fas fa-bars"></i>
         </button>
-        
       </div>
     </nav>
   </header>
