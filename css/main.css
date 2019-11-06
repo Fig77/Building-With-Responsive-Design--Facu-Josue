@@ -64,12 +64,18 @@ body {
   font-family: 'Roboto';
   font-weight: 500;
   position: sticky;
-
 }
 
 .nav-top:nth-last-of-type(1) > div {
-  height: 100%;
+  height: 3em;
+  width: 3em;
+  padding: 1em;
+  display: flex;
+  
 }
+
+padding: 0;
+
 
 .nav-top:nth-last-of-type(1) > div > ul {
   height: 100%;
@@ -84,13 +90,8 @@ body {
 }
 
 .nav-top:nth-last-child(1) > div > a {
-  display: block;
-  align-content: center;
-  width: auto;
-  height: 100%;
   background-color: #fff;
-  border: 1px solid #eee;
-  font-size: 1.07em;
+  font-size: 1em;
   font-weight: 500;
   color: #aaa;
 }
