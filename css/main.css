@@ -364,6 +364,49 @@ main > article:nth-of-type(1n+2) > div {
   color: #6b6b6b;
 }
 
+/* latest rounds section */
+.container-latest-rounds {
+  margin-top: 5rem;
+  margin-left: 8%;
+  margin-right: 8%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0.5vw;
+}
+
+.container-latest-rounds > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-latest-rounds > article > a:link {
+  color: #000;
+}
+
+.container-latest-rounds > article > a:visited {
+  color: #000;
+}
+
+.container-latest-rounds > article > a > img {
+  width: 3.2rem;
+  height: 3.2rem;
+  float: left;
+  margin-right: .8rem;
+}
+.container-latest-rounds > article > a > h4 {
+  margin-bottom: .2rem;
+  margin-top: .1rem;
+  color: #fff;
+  background-color: #fe4422;
+}
+
+.container-latest-rounds > article > a > div {
+  align-self: center;
+  color: #000;
+  background-color: #ffece7;
+}
+
 /* small screen */
 
 @media screen and (min-width: 747px) and (max-width: 1005px) {
