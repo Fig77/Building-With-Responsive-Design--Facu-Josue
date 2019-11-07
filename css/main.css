@@ -196,7 +196,6 @@ main > article:nth-of-type(1) {
   background-size: cover;
   background-position: 0 0;
   will-change: background-color;
-  z-index: 2;
 }
 .color-gradient {
   position: relative;
@@ -207,7 +206,6 @@ main > article:nth-of-type(1) {
   background-size: cover;
   background-position: 0 0;
   mix-blend-mode: lighten;
-  z-index: 4;
 }
 #logo-div {
   height: 6vw;
