@@ -23,6 +23,19 @@ body {
 
 /* General classes */
 
+.link-default-article:link {
+  color: #000;
+}
+
+.link-default-article:visited {
+  color: #000;
+}
+
+.link-default-article:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
 .article-headers-a {
   font-size: 0.8rem;
   font-family: "Montserrat";
