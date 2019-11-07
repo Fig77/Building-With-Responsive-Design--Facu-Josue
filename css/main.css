@@ -7,8 +7,10 @@ html {
 }
 
 main {
+  height: 75vh;
+  max-height: 560px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   margin-top: 10px;
   padding: 0 10px 10px 10px;
@@ -16,7 +18,7 @@ main {
 
 body {
   font-size: 16px;
-  background-color: gray;
+  background-color: #f0f0f0;
 }
 
 /* General classes */
@@ -167,8 +169,8 @@ body {
 
 /* Main */
 main > article {
-  height: 15.5em;
-  width: 27.3em;
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -208,8 +210,8 @@ main > article:nth-of-type(1) {
   z-index: 4;
 }
 #logo-div {
-  height: 7em;
-  width: 28em;
+  height: 6vw;
+  width: 26vw;
   position: absolute;
   top: 3%;
   left: 3%;
@@ -256,8 +258,12 @@ main > article:nth-of-type(3) > .div-container{
 main > article:nth-of-type(1n+2) > div {
   font-size: 10px;
 }
+.div-container > div {
+  margin-bottom: 2%;
+  }
+
 .div-container > div > h2 {
-  font-size: 3.5em;
+  font-size: 3.0em;
 }
 .div-container > div:nth-of-type(1n+1) > ul {
   display: flex;
@@ -271,14 +277,22 @@ main > article:nth-of-type(1n+2) > div {
 .div-container > div:nth-of-type(1n+1) > ul > li > a:visited{
   color: hsla(0,0%,100%,.6);
 }
+
 /* small screen */
 
-@media screen and (min-width: 747px) and (max-width: 813px) {
-
+@media screen and (min-width: 747px) and (max-width: 1005px) {
   .hide-on-medium {
     display: none;
   }
-  
+  .color-gradient {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+  }
+  #logo-div{
+    display: none;
+  }
 }
 
 /* cell */
@@ -316,7 +330,22 @@ main > article:nth-of-type(1n+2) > div {
     width: 3em;
     text-align: center;
   }
-  
+  .color-gradient {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+  }
+  main > article:nth-of-type(1) {
+    grid-column: span 3;
+  }
+  main > article{
+    font-size: 10px;
+    grid-column: span 3;
+  }
+  #logo-div{
+    display: none;
+  }
 }
 
 /* Rules that applies last */ 
