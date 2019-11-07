@@ -359,18 +359,22 @@ main > article:nth-of-type(1n+2) > div {
 
 /* latest rounds section */
 .container-latest-rounds {
-  margin-top: 5rem;
-  margin-left: 8%;
-  margin-right: 8%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 0.5vw;
+  grid-column-gap: 1vw;
 }
 
 .container-latest-rounds > article {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background-color: #fffaf8;
+  height: 17rem;
+  justify-content: flex-start;
+}
+
+.container-latest-rounds > article > a{
+  height: 6rem;
 }
 
 .container-latest-rounds > article > a:link {
@@ -382,15 +386,19 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 .container-latest-rounds > article > a > img {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 3.4rem;
+  height: 3.4rem;
   float: left;
   margin-right: .8rem;
+  margin-top: .8rem;
+  margin-left: .8rem;
 }
 .container-latest-rounds > article > a > h4 {
   margin-bottom: .2rem;
   margin-top: .1rem;
   color: #fff;
+  height: 24px;
+  padding-top: 4%;
   background-color: #fe4422;
 }
 
@@ -400,6 +408,46 @@ main > article:nth-of-type(1n+2) > div {
   background-color: #ffece7;
 }
 
+.container-latest-rounds > article > a > div > span:nth-of-type(1) {
+  font-weight: bolder;
+}
+
+.container-latest-rounds > article > a > div > span:nth-of-type(2) {
+  font-size: 14px;
+  color: #838383;
+}
+
+.container-latest-rounds > article > ul {
+  margin-left: .8rem;
+  margin-top: 1rem;
+}
+
+.container-latest-rounds > article > ul > li{
+  padding-bottom: .8rem;
+}
+
+.container-latest-rounds > article > ul > li > a{
+  padding-left: .2rem;
+  color: #868686;
+  font-size: calc(1rem-1px);
+}
+
+.container-latest-rounds > article > ul > li > a:hover{
+  padding-left: .2rem;
+  color: #000;
+  font-size: calc(1rem-1px);
+}
+
+.container-latest-rounds > article > p{
+  margin-left: .8rem;
+  margin-right: .8rem;
+  border-top: 2px solid #F3E3DE;
+  padding-top: .2rem;
+}
+
+.container-latest-rounds > article > p > span{
+  color: #868686;
+}
 /* small screen */
 
 @media screen and (min-width: 747px) and (max-width: 1005px) {
