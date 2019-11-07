@@ -359,12 +359,13 @@ main > article:nth-of-type(1n+2) > div {
 
 /* latest rounds section */
 .container-latest-rounds {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 1vw;
+  display: flex;
 }
 
 .container-latest-rounds > article {
+  flex:1;
+  margin-right: .5vw;
+  margin-left: .5vw;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -449,6 +450,11 @@ main > article:nth-of-type(1n+2) > div {
   color: #868686;
 }
 /* small screen */
+@media screen and (min-width: 1005px) and (max-width: 1100px) {
+  .container-latest-rounds > article:nth-of-type(4) {
+      display: none
+    }
+}
 
 @media screen and (min-width: 747px) and (max-width: 1005px) {
   .hide-on-medium {
@@ -471,7 +477,9 @@ main > article:nth-of-type(1n+2) > div {
     height: 15vw;
   }
 
-
+  .container-latest-rounds > article:nth-of-type(4) {
+    display: none
+  }
 }
 
 /* cell */
@@ -527,6 +535,17 @@ main > article:nth-of-type(1n+2) > div {
   #logo-div {
     display: none;
   }
+  .container-latest-rounds > article:nth-of-type(4) {
+    display: none
+  }
+
+  .container-latest-rounds {
+    flex-direction: column;
+  }
+  .container-latest-rounds > article{
+    margin-bottom: 1.3rem;
+  }
+
 }
 
 /* Rules that applies last */
