@@ -637,7 +637,8 @@ main > article:nth-of-type(1n+2) > div {
   background-repeat: no-repeat;
   justify-content: flex-end;
   align-content: flex-start;
-  
+  padding: 1em;
+  box-sizing: border-box;
 }
 
 .link-misc-header {
@@ -651,6 +652,13 @@ main > article:nth-of-type(1n+2) > div {
 
 .link-misc-header:hover {
   text-decoration: underline 0.3px;
+}
+
+.span-under-header,
+.span-under-header > a:link,
+.span-under-header > a:visited{
+  color: #aaa;
+  font-size: 0.8rem;
 }
 
 .img-misc {
