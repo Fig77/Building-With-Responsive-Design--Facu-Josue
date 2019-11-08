@@ -619,9 +619,18 @@ main > article:nth-of-type(1n+2) > div {
 
 /* TAGG::Articles-misc -section */
 
+.article-misc-section {
+  display: flex;
+  justify-content: center;
+}
+
 .articles-misc-container {
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-row-gap: 1rem;
+}
+
+.article-misc {
+  max-width: 500px;
 }
 
 .header-misc-container {
@@ -630,7 +639,7 @@ main > article:nth-of-type(1n+2) > div {
 
 .div-header-article-misc {
   height: 276px;
-  max-width: 368px;
+  max-width: 500px;
   background: url(../img/image-gradient.png),
     url("../img/misc_1.jpg") rgba(255, 255, 255, 0.01);
   background-size: cover, cover;
@@ -682,7 +691,7 @@ main > article:nth-of-type(1n+2) > div {
   margin-top: 0.2em;
   background-color: rgba(255, 68, 34, .06);
   width: 100%;
-  max-width: 368px;
+  max-width: 500px;
 }
 
 .inner-div-text {
@@ -733,7 +742,7 @@ main > article:nth-of-type(1n+2) > div {
 /* TAGG:Articles-Misc-Section-Lists */
 
 .article-misc-ul {
-  max-width: 368px;
+  max-width: 500px;
 }
 
 .article-misc-ul > li {
@@ -769,13 +778,15 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 
-/* small screen */
+
 
 @media screen and (min-width: 1005px) and (max-width: 1100px) {
   .container-latest-rounds > article:nth-of-type(4) {
     display: none
   }
 }
+
+/* small screen */
 
 @media screen and (min-width: 747px) and (max-width: 1005px) {
   .hide-on-medium {
@@ -915,6 +926,18 @@ main > article:nth-of-type(1n+2) > div {
   .container-latest-rounds > article {
     margin-bottom: 1.3rem;
   }
+  
+  /* Article-Misc-Section */
+  
+  .article-misc {
+    width: 100%;
+  }
+  
+  .div-header-article-misc {
+    align-content: flex-end;
+  }
+
+  
 
 }
 
