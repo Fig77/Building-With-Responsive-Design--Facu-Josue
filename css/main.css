@@ -23,6 +23,12 @@ body {
 
 /* General classes */
 
+.default-section-template {
+  margin-top: 5rem;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
 .link-default-article:link {
   color: #000;
 }
@@ -329,9 +335,7 @@ main > article:nth-of-type(1n+2) > div {
 /* Latest news section */
 
 .latest-news {
-  margin-top: 5rem;
-  margin-left: 8%;
-  margin-right: 8%;
+  
 }
 
 .latest-news-article {
@@ -376,7 +380,7 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 .container-latest-rounds > article {
-  flex:1;
+  flex: 1;
   margin-right: .5vw;
   margin-left: .5vw;
   box-sizing: border-box;
@@ -387,7 +391,7 @@ main > article:nth-of-type(1n+2) > div {
   justify-content: flex-start;
 }
 
-.container-latest-rounds > article > a{
+.container-latest-rounds > article > a {
   height: 6rem;
 }
 
@@ -407,6 +411,7 @@ main > article:nth-of-type(1n+2) > div {
   margin-top: .8rem;
   margin-left: .8rem;
 }
+
 .container-latest-rounds > article > a > h4 {
   margin-bottom: .2rem;
   margin-top: .1rem;
@@ -486,6 +491,7 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 /* latest rounds section */
+
 .container-latest-rounds {
   display: flex;
   flex-direction: row;
@@ -585,33 +591,104 @@ main > article:nth-of-type(1n+2) > div {
   margin-top: 1rem;
 }
 
-.container-latest-rounds > article > ul > li{
+.container-latest-rounds > article > ul > li {
   padding-bottom: .8rem;
 }
 
-.container-latest-rounds > article > ul > li > a{
+.container-latest-rounds > article > ul > li > a {
   padding-left: .2rem;
   color: #868686;
   font-size: calc(1rem-1px);
 }
 
-.container-latest-rounds > article > ul > li > a:hover{
+.container-latest-rounds > article > ul > li > a:hover {
   padding-left: .2rem;
   color: #000;
   font-size: calc(1rem-1px);
 }
 
-.container-latest-rounds > article > p{
+.container-latest-rounds > article > p {
   margin-left: .8rem;
   margin-right: .8rem;
   border-top: 2px solid #F3E3DE;
   padding-top: .2rem;
 }
 
-.container-latest-rounds > article > p > span{
+.container-latest-rounds > article > p > span {
   color: #868686;
 }
+
+/* articles-misc -section */
+
+.articles-misc-container {
+  grid-template-columns: repeat(3, minmax(250px, 345px));
+}
+
+.header-article-misc {
+ 
+}
+
+.div-header-article-misc > span:nth-child(1) {
+  font-family: "Exo 2";
+  color: #fff;
+}
+
+.div-header-article-misc > h3 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.span-under-header {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.span-under-header > a:link,
+.span-under-header > a:visited {
+  color: #aaa;
+}
+
+.span-under-header > a:hover {
+  color: #fff;
+}
+
+
+
+.header-misc-container {
+  position: relative;
+}
+
+.div-header-article-misc {
+  width: 368px;
+  height: 276px;
+  max-width: 368px;
+  background-image: url("../img/misc_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  align-content: flex-start;
+  padding: 1em;
+}
+
+.link-misc-header {
+  
+}
+
+.link-misc-header:link,
+.link-misk-header:visited {
+  color: #fff;
+}
+
+.link-misc-header:hover {
+  text-decoration: underline 0.3px;
+}
+
+.img-misc {
+ 
+}
+
 /* small screen */
+
 @media screen and (min-width: 1005px) and (max-width: 1100px) {
   .container-latest-rounds > article:nth-of-type(4) {
     display: none
@@ -642,13 +719,17 @@ main > article:nth-of-type(1n+2) > div {
   .container-latest-rounds > article:nth-of-type(4) {
     display: none
   }
+
   main > article {
     font-size: 9px;
   }
+
   main > article:nth-of-type(1n+2) > div {
     font-size: 7px;
   }
 }
+
+
 
 /* cell */
 
@@ -692,7 +773,7 @@ main > article:nth-of-type(1n+2) > div {
   }
 
   /* latest news */
-  
+
   .default-grid-template {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit, minmax(92px, 1fr));
@@ -721,7 +802,7 @@ main > article:nth-of-type(1n+2) > div {
     width: calc(100% - 75px);
     max-width: calc(100% - 75px - 1em);
   }
-  
+
   /* Main */
 
   main > article:nth-of-type(1) {
@@ -732,6 +813,7 @@ main > article:nth-of-type(1n+2) > div {
     font-size: 6px;
     grid-column: span 3;
   }
+
   main > article:nth-of-type(1n+2) > div {
     font-size: 6px;
   }
