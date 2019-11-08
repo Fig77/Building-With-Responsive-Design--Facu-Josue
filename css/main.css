@@ -740,7 +740,7 @@ main > article:nth-of-type(1n+2) > div {
   justify-content: flex-start;
   align-content: center;
   float: left;
-  width: 69%;
+  width: 65%;
 }
 
 .inner-div-text > span {
@@ -807,7 +807,6 @@ main > article:nth-of-type(1n+2) > div {
   background-position: 50%;
   float: right;
 }
-
 
 /* TAGG:Articles-Misc-Section-Lists */
 
@@ -892,8 +891,6 @@ main > article:nth-of-type(1n+2) > div {
   }
 }
 
-
-
 /* cell */
 
 @media screen and (max-width: 746px) {
@@ -946,6 +943,10 @@ main > article:nth-of-type(1n+2) > div {
     flex-direction: row;
     justify-content: flex-start;
     align-content: flex-start;
+  }
+  
+  .article-misc {
+    flex-direction: column;
   }
 
   .latest-news-article > a img {
@@ -1006,9 +1007,5 @@ main > article:nth-of-type(1n+2) > div {
   .div-header-article-misc {
     align-content: flex-end;
   }
-
-
-
 }
-
 /* Rules that applies last */
