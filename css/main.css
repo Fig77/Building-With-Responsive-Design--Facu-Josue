@@ -637,11 +637,49 @@ main > article:nth-of-type(1n+2) > div {
   position: relative;
 }
 
+.header-misc-0 {
+  background: url(../img/image-gradient.png),
+    url("../img/misc_1.jpg") rgba(255, 255, 255, 0.01);
+}
+
+.header-misc-1 {
+  background: url(../img/image-gradient.png),
+    url("../img/misc_2.jpg") rgba(255, 255, 255, 0.01);
+}
+
+.header-misc-2 {
+  background: url(../img/image-gradient.png),
+    url("../img/misc_3.jpg") rgba(255, 255, 255, 0.01);
+}
+
+.header-misc-3 {
+  background: url(../img/image-gradient.png),
+    url("../img/misc_4.jpg") rgba(255, 255, 255, 0.01);
+}
+
+.header-misc-4 {
+  background: url(../img/image-gradient.png),
+    url("../img/misc_5.png") rgba(255, 255, 255, 0.01);
+}
+
+.header-misc-5 {
+  background: url(../img/image-gradient.png),
+    url("../img/misc_6.jpg") rgba(255, 255, 255, 0.01);
+}
+
+.header-misc-6 {
+  background: url(../img/image-gradient.png),
+    url("../img/misc_7.jpg") rgba(255, 255, 255, 0.01);
+}
+
+.header-misc-7 {
+  background: url(../img/image-gradient.png),
+    url("../img/misc_8.jpg") rgba(255, 255, 255, 0.01);
+}
+
 .div-header-article-misc {
   height: 276px;
   max-width: 500px;
-  background: url(../img/image-gradient.png),
-    url("../img/misc_1.jpg") rgba(255, 255, 255, 0.01);
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
   justify-content: flex-end;
@@ -726,18 +764,50 @@ main > article:nth-of-type(1n+2) > div {
   text-decoration: underline;
 }
 
+.img-1 {
+  background: url("../img/misc_inner_small_1.jpg");
+
+}
+
+.img-2 {
+  background: url("../img/misc_inner_small_2.jpg");
+}
+
+.img-3 {
+  background: url("../img/misc_inner_small_3.png");
+}
+
+.img-4 {
+  background: url("../img/misc_inner_small_4.png");
+}
+
+.img-5 {
+  background: url("../img/misc_inner_small_5.png");
+}
+
+.img-6 {
+  background: url("../img/misc_inner_small_6.jpg");
+}
+
+.img-7 {
+  background: url("../img/misc_inner_small_7.jpg");
+}
+
+.img-8 {
+  background: url("../img/misc_inner_small_8.jpg");
+}
+
 .inner-div-misc-img {
   max-width: 96px;
   max-height: 96px;
   height: 100%;
   width: 100%;
-  background-color: orangered;
-  background: url("../img/misc_inner_small_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   float: right;
 }
+
 
 /* TAGG:Articles-Misc-Section-Lists */
 
@@ -926,18 +996,18 @@ main > article:nth-of-type(1n+2) > div {
   .container-latest-rounds > article {
     margin-bottom: 1.3rem;
   }
-  
+
   /* Article-Misc-Section */
-  
+
   .article-misc {
     width: 100%;
   }
-  
+
   .div-header-article-misc {
     align-content: flex-end;
   }
 
-  
+
 
 }
 
