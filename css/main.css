@@ -632,17 +632,31 @@ main > article:nth-of-type(1n+2) > div {
   width: 368px;
   height: 276px;
   max-width: 368px;
-  background-image: url("../img/misc_1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../img/image-gradient.png), 
+              url("../img/misc_1.jpg") rgba(255, 255, 255, 0.01);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
   justify-content: flex-end;
   align-content: flex-start;
   padding: 1em;
   box-sizing: border-box;
+  position: relative;
+}
+
+.first-span-article-header {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Exo 2", "Montserrat";
+}
+
+.h3-article-misc {
+  margin-top: 0.3em;
+  
 }
 
 .link-misc-header {
-  
+  font-family: "Montserrat";
+  font-weight: 600;
 }
 
 .link-misc-header:link,
