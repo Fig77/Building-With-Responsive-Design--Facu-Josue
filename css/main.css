@@ -621,38 +621,8 @@ main > article:nth-of-type(1n+2) > div {
 /* articles-misc -section */
 
 .articles-misc-container {
-  grid-template-columns: repeat(3, minmax(250px, 345px));
+  grid-template-columns: repeat(3, minmax(250px, 368px));
 }
-
-.header-article-misc {
- 
-}
-
-.div-header-article-misc > span:nth-child(1) {
-  font-family: "Exo 2";
-  color: #fff;
-}
-
-.div-header-article-misc > h3 {
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
-}
-
-.span-under-header {
-  font-size: 0.8rem;
-  color: #aaa;
-}
-
-.span-under-header > a:link,
-.span-under-header > a:visited {
-  color: #aaa;
-}
-
-.span-under-header > a:hover {
-  color: #fff;
-}
-
-
 
 .header-misc-container {
   position: relative;
@@ -667,7 +637,7 @@ main > article:nth-of-type(1n+2) > div {
   background-repeat: no-repeat;
   justify-content: flex-end;
   align-content: flex-start;
-  padding: 1em;
+  
 }
 
 .link-misc-header {
@@ -686,7 +656,6 @@ main > article:nth-of-type(1n+2) > div {
 .img-misc {
  
 }
-
 /* small screen */
 
 @media screen and (min-width: 1005px) and (max-width: 1100px) {
