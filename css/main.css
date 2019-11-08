@@ -680,17 +680,102 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 /*latest deals */
-.price-tag{
+.price-tag {
   font-size: 0.9rem;
   color:#555;
   font-weight: 100;
 }
-.price-tag label{
+.price-tag label {
   font-size: 0.7rem;
   text-decoration-line: line-through;
   color: #aaa;
   font-weight: 100;
 }
+
+/* footer */
+.footer-top {
+  background-color: #131313;
+}
+
+.footer-top > div {
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  padding-top: 3rem;
+  align-items: center;
+}
+
+.footer-top > div > ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  align-content: center;
+  align-items: center;
+}
+.footer-top > div > ul > li > button {
+  background-color: #333333;
+  color: #fff;
+  height: 2.6rem;
+  width: 2.6rem;
+  margin-left: .4rem;
+  margin-right: .4rem;
+  border-radius: 1.3rem;
+  border-color: #333333;
+}
+.footer-top > div > ul > li > button:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.footer-top > div > ul:nth-of-type(2) > li {
+  margin-right: 1rem;
+  font-size: 1rem;  
+  font-family: "Roboto"; 
+}
+
+.footer-top > div > ul:nth-of-type(2) > li > a {
+  color:#aaa;
+}
+
+.footer-top > div > ul:nth-of-type(2) > li > a:hover {
+  color:#fff;
+}
+
+.footer-bottom {
+  background-color: #000;
+  padding: 3rem 0;
+}
+
+.footer-bottom > div {
+  background-color: #000;
+  width: 85%;
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-bottom > div > span {
+  color: #aaa;
+  font-size: .8rem;
+}
+
+.footer-bottom > div > span:nth-of-type(1) > a > img { 
+  width: 3rem;
+  height: auto;
+ }
+
+ .footer-bottom > div > span:nth-of-type(3) > a > img { 
+  width: 5rem;
+  height: auto;
+ }
 /* small screen */
 
 @media screen and (min-width: 1005px) and (max-width: 1100px) {
@@ -838,6 +923,29 @@ main > article:nth-of-type(1n+2) > div {
     margin-bottom: 1.3rem;
   }
 
+  .footer-top > div > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    font-size: 1rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-top > div > ul > li > button {
+    background-color: #333333;
+    color: #fff;
+    height: 2.3rem;
+    width: 2.3rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    border-radius: 1.15rem;
+    border-color: #333333;
+  }
+
+  .footer-bottom > div{
+    flex-direction: column;
+  }
 }
 
 /* Rules that applies last */
