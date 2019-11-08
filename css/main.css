@@ -488,6 +488,7 @@ main > article:nth-of-type(1n+2) > div {
 /* latest rounds section */
 .container-latest-rounds {
   display: flex;
+  flex-direction: row;
 }
 
 .container-latest-rounds > article {
@@ -733,9 +734,6 @@ main > article:nth-of-type(1n+2) > div {
   }
   main > article:nth-of-type(1n+2) > div {
     font-size: 6px;
-  }
-    font-size: 10px;
-    grid-column: span 3;
   }
 
   #logo-div {
