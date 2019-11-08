@@ -678,6 +678,19 @@ main > article:nth-of-type(1n+2) > div {
 .img-misc {
  
 }
+
+/*latest deals */
+.price-tag{
+  font-size: 0.9rem;
+  color:#555;
+  font-weight: 100;
+}
+.price-tag label{
+  font-size: 0.7rem;
+  text-decoration-line: line-through;
+  color: #aaa;
+  font-weight: 100;
+}
 /* small screen */
 
 @media screen and (min-width: 1005px) and (max-width: 1100px) {
