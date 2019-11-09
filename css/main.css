@@ -798,10 +798,9 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 .inner-div-misc-img {
-  max-width: 96px;
-  max-height: 96px;
+  
   height: 100%;
-  width: 100%;
+  width: 30%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
