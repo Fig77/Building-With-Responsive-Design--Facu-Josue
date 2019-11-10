@@ -29,22 +29,31 @@ body {
   margin-right: 8%;
 }
 
-.link-default-article:link {
-  color: #000;
+.default-grid-template {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 1vw;
 }
 
-.link-default-article:visited {
-  color: #000;
+.default-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.link-default-article:hover {
-  color: #f42;
-  text-decoration: underline;
+.navs-ul {
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.81em;
 }
 
-.article-headers-a {
-  font-size: 0.8rem;
-  font-family: "Montserrat";
+.navs-li {
+  text-align: center;
+  padding-right: 1em;
 }
 
 .article-headers-a:link {
@@ -60,17 +69,28 @@ body {
   color: #f42;
 }
 
-.default-grid-template {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-column-gap: 1vw;
+.article-headers-a {
+  font-size: 0.8rem;
+  font-family: "Montserrat";
 }
 
-.default-flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+.link-default-article:link {
+  color: #000;
+}
+
+.link-default-article:visited {
+  color: #000;
+}
+
+.link-default-article:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.border-thin-eee {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #eee;
 }
 
 .hide-header {
@@ -83,26 +103,6 @@ body {
 
 .right {
   float: right;
-}
-
-.navs-li {
-  text-align: center;
-  padding-right: 1em;
-}
-
-.navs-ul {
-  height: 2em;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  font-size: 0.81em;
-}
-
-.border-thin-eee {
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-left-color: #eee;
 }
 
 /* Header */
@@ -145,7 +145,7 @@ body {
   color: #fff;
 }
 
-/* styling of fixed nav bar */
+/* styling of sticky nav bar */
 
 .nav-sticky {
   height: 3em;
@@ -184,18 +184,12 @@ body {
   margin-left: 1.5em;
 }
 
-.nav-sticky > div > ul > li > a:link {
-  color: #aaa;
-}
-
+.nav-sticky > div > ul > li > a:link,
 .nav-sticky > div > ul > li > a:visited {
   color: #aaa;
 }
 
-.nav-sticky > div > ul > li > a:visited:hover {
-  color: #000;
-}
-
+.nav-sticky > div > ul > li > a:visited:hover,
 .nav-sticky > div > ul > li > a:link:hover {
   color: #000;
 }
@@ -214,6 +208,7 @@ body {
 }
 
 /* Main */
+
 main > article {
   height: auto;
   width: auto;
@@ -332,112 +327,7 @@ main > article:nth-of-type(1n+2) > div {
   color: hsla(0, 0%, 100%, .6);
 }
 
-/* Latest news section */
-
-.latest-news {}
-
-.latest-news-article {
-  height: 300px;
-}
-
-.latest-news > div {
-  width: auto;
-  height: auto;
-}
-
-.latest-news-article > img {
-  flex: 0.6;
-}
-
-.latest-news-article > h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  max-width: 250px;
-}
-
-.latest-news-article > span {
-  font-size: 0.6rem;
-  color: #6b6b6b;
-}
-
-.latest-news-article > span > a:link {
-  color: #6b6b6b;
-  font-size: 0.7rem;
-  padding-right: 0.2rem;
-}
-
-.latest-news-article > span > a:visited {
-  color: #6b6b6b;
-}
-
-/* latest rounds section */
-
-.container-latest-rounds {
-  display: flex;
-}
-
-.container-latest-rounds > article {
-  flex: 1;
-  margin-right: .5vw;
-  margin-left: .5vw;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  background-color: #fffaf8;
-  height: 17rem;
-  justify-content: flex-start;
-}
-
-.container-latest-rounds > article > a {
-  height: 6rem;
-}
-
-.container-latest-rounds > article > a:link {
-  color: #000;
-}
-
-.container-latest-rounds > article > a:visited {
-  color: #000;
-}
-
-.container-latest-rounds > article > a > img {
-  width: 3.4rem;
-  height: 3.4rem;
-  float: left;
-  margin-right: .8rem;
-  margin-top: .8rem;
-  margin-left: .8rem;
-}
-
-.container-latest-rounds > article > a > h4 {
-  margin-bottom: .2rem;
-  margin-top: .1rem;
-  color: #fff;
-  height: 24px;
-  padding-top: 4%;
-  background-color: #fe4422;
-}
-
-.container-latest-rounds > article > a > div {
-  align-self: center;
-  color: #000;
-  background-color: #ffece7;
-}
-
-.container-latest-rounds > article > a > div > span:nth-of-type(1) {
-  font-weight: bolder;
-}
-
-.container-latest-rounds > article > a > div > span:nth-of-type(2) {
-  font-size: 14px;
-  color: #838383;
-}
-
-.div-container > div:nth-of-type(1n+1) > ul > li > a:visited {
-  color: hsla(0, 0%, 100%, .6);
-}
+/* TAGG::Latest news section */
 
 /* Latest news section */
 
@@ -461,8 +351,8 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 .latest-news-article > a > img {
-  max-width: 273.05px;
-  max-height: 153.583px;
+  max-width: 450px;
+  max-height: 152.233px;
   width: 100%;
 }
 
@@ -697,7 +587,6 @@ main > article:nth-of-type(1n+2) > div {
 
 .h3-article-misc {
   margin-top: 0.3em;
-
 }
 
 .link-misc-header {
@@ -766,7 +655,6 @@ main > article:nth-of-type(1n+2) > div {
 
 .img-1 {
   background: url("../img/misc_inner_small_1.jpg");
-
 }
 
 .img-2 {
@@ -798,7 +686,6 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 .inner-div-misc-img {
-  
   height: 100%;
   width: 30%;
   background-repeat: no-repeat;
@@ -845,7 +732,7 @@ main > article:nth-of-type(1n+2) > div {
   width: 4px;
 }
 
-
+/* Medias */
 
 
 @media screen and (min-width: 1005px) and (max-width: 1100px) {
@@ -890,7 +777,7 @@ main > article:nth-of-type(1n+2) > div {
   }
 }
 
-/* cell */
+/* Mobile-size */
 
 @media screen and (max-width: 746px) {
 
@@ -931,7 +818,7 @@ main > article:nth-of-type(1n+2) > div {
     background: transparent;
   }
 
-  /* latest news */
+  /* latest news -  mobile */
 
   .default-grid-template {
     grid-template-columns: 1fr;
@@ -966,7 +853,7 @@ main > article:nth-of-type(1n+2) > div {
     max-width: calc(100% - 75px - 1em);
   }
 
-  /* Main */
+  /* Main - mobile  */
 
   main > article:nth-of-type(1) {
     grid-column: span 3;
@@ -997,7 +884,7 @@ main > article:nth-of-type(1n+2) > div {
     margin-bottom: 1.3rem;
   }
 
-  /* Article-Misc-Section */
+  /* Article-Misc-Section - mobile */
 
   .article-misc {
     width: 100%;
@@ -1007,4 +894,5 @@ main > article:nth-of-type(1n+2) > div {
     align-content: flex-end;
   }
 }
+
 /* Rules that applies last */
