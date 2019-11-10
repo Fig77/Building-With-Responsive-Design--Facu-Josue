@@ -681,7 +681,45 @@ main > article:nth-of-type(1n+2) > div {
   background: url("../img/misc_inner_small_7.jpg");
 }
 
-/*latest deals */
+/* TAGG:Articles-Misc-Section-Lists */
+
+.article-misc-ul {
+  max-width: 500px;
+}
+
+.article-misc-ul > li {
+  width: 80%;
+  margin-left: 3.5%;
+  padding-bottom: 0.5rem;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #d3d3d3;
+}
+
+.article-misc-ul > li > a,
+.article-misc-ul > li > a:visited {
+  color: #4c4c4c;
+  font-family: "Maven Pro";
+  font-size: 0.9rem;
+}
+
+.article-misc-ul > li > a:hover {
+  color: #000;
+}
+
+.article-misc-ul > li::before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  right: 13px;
+  position: relative;
+  top: 13px;
+  width: 4px;
+}
+
+/* TAGG::latest deals section */
 
 .price-tag {
   font-size: 0.9rem;
@@ -780,7 +818,6 @@ main > article:nth-of-type(1n+2) > div {
   width: 5rem;
   height: auto;
  }
-/* small screen */
 
 .img-8 {
   background: url("../img/misc_inner_small_8.jpg");
@@ -795,47 +832,7 @@ main > article:nth-of-type(1n+2) > div {
   float: right;
 }
 
-/* TAGG:Articles-Misc-Section-Lists */
-
-.article-misc-ul {
-  max-width: 500px;
-}
-
-.article-misc-ul > li {
-  width: 80%;
-  margin-left: 3.5%;
-  padding-bottom: 0.5rem;
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-  border-bottom-color: #d3d3d3;
-}
-
-.article-misc-ul > li > a,
-.article-misc-ul > li > a:visited {
-  color: #4c4c4c;
-  font-family: "Maven Pro";
-  font-size: 0.9rem;
-}
-
-.article-misc-ul > li > a:hover {
-  color: #000;
-}
-
-.article-misc-ul > li::before {
-  background-color: #f42;
-  border-radius: 50%;
-  content: "";
-  display: block;
-  height: 4px;
-  right: 13px;
-  position: relative;
-  top: 13px;
-  width: 4px;
-}
-
 /* Medias */
-
->>>>>>> 15a2e7f8ed3a02f13a0514507e171cbd6f77effc
 
 @media screen and (min-width: 1005px) and (max-width: 1100px) {
   .container-latest-rounds > article:nth-of-type(4) {
