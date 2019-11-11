@@ -386,18 +386,18 @@ main > article:nth-of-type(1n+2) > div {
   max-width: 250px;
 }
 
-.latest-news-article > span > span {
+.latest-news-article > h3 > span {
   font-size: 0.6rem;
   color: #6b6b6b;
 }
 
-.latest-news-article > span > span > a:link {
+.latest-news-article > h3 > span > a:link {
   color: #6b6b6b;
   font-size: 0.7rem;
   padding-right: 0.2rem;
 }
 
-.latest-news-article > span > span > a:visited {
+.latest-news-article > h3 > span > a:visited {
   color: #6b6b6b;
 }
 
@@ -718,6 +718,17 @@ main > article:nth-of-type(1n+2) > div {
 
 /* TAGG::latest deals section */
 
+.latest-news-article > h3 > span {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 100;
+}
+
+.latest-news-article > h3 > span > span {
+  font-size: 0.6rem;
+  color: #aaa;
+}
+
 .price-tag {
   font-size: 0.9rem;
   color: #555;
@@ -887,20 +898,20 @@ main > article:nth-of-type(1n+2) > div {
 /* Mobile-size */
 
 @media screen and (max-width: 746px) {
-  
-  .container-left-sticky{
+
+  .container-left-sticky {
     height: 100%;
   }
-  
+
   .header-nav-sticky {
     width: 96px;
     height: 45px;
   }
-  
+
   .header-nav-sticky > a {
     width: 100%;
   }
-  
+
   .header-nav-sticky > a > img {
     width: 60%;
   }
