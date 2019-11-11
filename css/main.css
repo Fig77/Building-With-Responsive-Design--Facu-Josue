@@ -58,7 +58,7 @@ body {
 
 .article-headers-a {
   font-size: 0.8rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
 }
 
 .article-headers-a > h2 {
@@ -150,14 +150,13 @@ body {
 .nav-sticky {
   height: 3em;
   background: #fff;
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
   font-weight: 500;
   position: sticky;
   font-size: 115%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
   top: 0;
   z-index: 10;
 }
@@ -533,7 +532,8 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 .header-misc-1 {
-  background: url(../img/image-gradient.png),
+  background: 
+    url(../img/image-gradient.png),
     url("../img/misc_2.jpg") rgba(255, 255, 255, 0.01);
 }
 
@@ -597,7 +597,7 @@ main > article:nth-of-type(1n+2) > div {
 }
 
 .link-misc-header {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-weight: 600;
 }
 
@@ -640,7 +640,7 @@ main > article:nth-of-type(1n+2) > div {
 .inner-div-text > span {
   color: #f42;
   font-size: 0.8rem;
-  font-family: "Exo 2";
+  font-family: "Exo 2", "sans-serif";
 }
 
 .inner-div-text > h6 {
@@ -704,7 +704,7 @@ main > article:nth-of-type(1n+2) > div {
 .article-misc-ul > li > a,
 .article-misc-ul > li > a:visited {
   color: #4c4c4c;
-  font-family: "Maven Pro";
+  font-family: "Maven Pro", "sans-serif";
   font-size: 0.9rem;
 }
 
@@ -783,7 +783,7 @@ main > article:nth-of-type(1n+2) > div {
 .footer-top > div > ul:nth-of-type(2) > li {
   margin-right: 1rem;
   font-size: 1rem;
-  font-family: "Roboto";
+  font-family: "Roboto", "sans-serif";
 }
 
 .footer-top > div > ul:nth-of-type(2) > li > a {
@@ -886,7 +886,6 @@ main > article:nth-of-type(1n+2) > div {
 /* Mobile-size */
 
 @media screen and (max-width: 746px) {
-
   .hide-on-small {
     display: none;
   }
