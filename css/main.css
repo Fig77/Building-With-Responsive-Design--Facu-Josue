@@ -170,7 +170,6 @@ body {
   display: flex;
   margin: 0;
   background: #fff;
-  width: auto;
   font-family: "Exo 2", sans-serif;
   font-weight: 500;
   width: 85%;
@@ -178,7 +177,6 @@ body {
 
 .div-logo-nav {
   width: 12%;
-  background-color: #000;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
   flex-wrap: nowrap;
   justify-content: center;
@@ -718,7 +716,7 @@ main > article:nth-of-type(1n+2) > div {
 
 /* TAGG::latest deals section */
 
-.latest-news-article > h3 > span {
+.last-deals-art > h3 > span {
   font-size: 0.9rem;
   color: #555;
   font-weight: 100;
