@@ -61,10 +61,10 @@ body {
   font-family: "Montserrat";
 }
 
-.article-headers-a > h2{
+.article-headers-a > h2 {
   font-size: 1.3rem;
   margin-top: 0.8em;
-  margin-bottom: 0.8em;  
+  margin-bottom: 0.8em;
 }
 
 .article-headers-a:link,
@@ -722,9 +722,10 @@ main > article:nth-of-type(1n+2) > div {
 
 .price-tag {
   font-size: 0.9rem;
-  color:#555;
+  color: #555;
   font-weight: 100;
 }
+
 .price-tag span {
   font-size: 0.7rem;
   text-decoration-line: line-through;
@@ -757,6 +758,7 @@ main > article:nth-of-type(1n+2) > div {
   align-content: center;
   align-items: center;
 }
+
 .footer-top > div > ul > li > button {
   background-color: #333333;
   color: #fff;
@@ -767,6 +769,7 @@ main > article:nth-of-type(1n+2) > div {
   border-radius: 1.3rem;
   border-color: #333333;
 }
+
 .footer-top > div > ul > li > button:hover {
   background-color: #000;
   cursor: pointer;
@@ -774,16 +777,16 @@ main > article:nth-of-type(1n+2) > div {
 
 .footer-top > div > ul:nth-of-type(2) > li {
   margin-right: 1rem;
-  font-size: 1rem;  
-  font-family: "Roboto"; 
+  font-size: 1rem;
+  font-family: "Roboto";
 }
 
 .footer-top > div > ul:nth-of-type(2) > li > a {
-  color:#aaa;
+  color: #aaa;
 }
 
 .footer-top > div > ul:nth-of-type(2) > li > a:hover {
-  color:#fff;
+  color: #fff;
 }
 
 .footer-bottom {
@@ -794,7 +797,7 @@ main > article:nth-of-type(1n+2) > div {
 .footer-bottom > div {
   background-color: #000;
   width: 85%;
-  margin:auto;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -808,15 +811,15 @@ main > article:nth-of-type(1n+2) > div {
   font-size: .8rem;
 }
 
-.footer-bottom > div > span:nth-of-type(1) > a > img { 
+.footer-bottom > div > span:nth-of-type(1) > a > img {
   width: 3rem;
   height: auto;
- }
+}
 
- .footer-bottom > div > span:nth-of-type(3) > a > img { 
+.footer-bottom > div > span:nth-of-type(3) > a > img {
   width: 5rem;
   height: auto;
- }
+}
 
 .img-8 {
   background: url("../img/misc_inner_small_8.jpg");
@@ -882,7 +885,7 @@ main > article:nth-of-type(1n+2) > div {
   .hide-on-small {
     display: none;
   }
-  
+
   .nav-sticky {
     justify-content: flex-end;
   }
@@ -928,7 +931,7 @@ main > article:nth-of-type(1n+2) > div {
     justify-content: flex-start;
     align-content: flex-start;
   }
-  
+
   .article-misc {
     flex-direction: column;
   }
@@ -981,7 +984,7 @@ main > article:nth-of-type(1n+2) > div {
   .container-latest-rounds > article {
     margin-bottom: 1.3rem;
   }
-  
+
   .footer-top > div > ul {
     display: flex;
     flex-wrap: wrap;
@@ -991,7 +994,7 @@ main > article:nth-of-type(1n+2) > div {
     align-items: center;
     justify-content: center;
   }
-  
+
   .footer-top > div > ul > li > button {
     background-color: #333333;
     color: #fff;
@@ -1003,10 +1006,10 @@ main > article:nth-of-type(1n+2) > div {
     border-color: #333333;
   }
 
-  .footer-bottom > div{
+  .footer-bottom > div {
     flex-direction: column;
   }
-  
+
   /* Article-Misc-Section - mobile */
 
   .article-misc {
@@ -1016,7 +1019,7 @@ main > article:nth-of-type(1n+2) > div {
   .div-header-article-misc {
     align-content: flex-end;
   }
-  
+
 }
 
 /* Rules that applies last */
