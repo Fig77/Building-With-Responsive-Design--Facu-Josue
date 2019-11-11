@@ -8,7 +8,7 @@ html {
 
 header {
   display: grid;
-  grid-template-columns: 100%
+  grid-template-columns: 100%;
 }
 
 main {
@@ -861,7 +861,6 @@ main > article:nth-of-type(1n+2) > div {
 /* small screen */
 
 @media screen and (min-width: 747px) and (max-width: 1005px) {
-
   .hide-on-medium {
     display: none;
   }
@@ -898,7 +897,6 @@ main > article:nth-of-type(1n+2) > div {
 /* Mobile-size */
 
 @media screen and (max-width: 746px) {
-
   .container-left-sticky {
     height: 100%;
   }
