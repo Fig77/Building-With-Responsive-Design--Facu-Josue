@@ -455,13 +455,13 @@ main>article:nth-of-type(1n+2)>div {
 .container-latest-rounds>article>ul>li>a {
   padding-left: .2rem;
   color: #868686;
-  font-size: calc(1rem-1px);
+  font-size: calc(1rem - 1px);
 }
 
 .container-latest-rounds>article>ul>li>a:hover {
   padding-left: .2rem;
   color: #000;
-  font-size: calc(1rem-1px);
+  font-size: calc(1rem - 1px);
 }
 
 .container-latest-rounds>article>p {
@@ -487,13 +487,13 @@ main>article:nth-of-type(1n+2)>div {
 .container-latest-rounds>article>ul>li>a {
   padding-left: .2rem;
   color: #868686;
-  font-size: calc(1rem-1px);
+  font-size: calc(1rem - 1px);
 }
 
 .container-latest-rounds>article>ul>li>a:hover {
   padding-left: .2rem;
   color: #000;
-  font-size: calc(1rem-1px);
+  font-size: calc(1rem - 1px);
 }
 
 .container-latest-rounds>article>p {
@@ -601,7 +601,7 @@ main>article:nth-of-type(1n+2)>div {
 }
 
 .link-misc-header:hover {
-  text-decoration: underline 0.3px;
+  text-decoration: underline;
 }
 
 .span-under-header,
@@ -767,7 +767,6 @@ main>article:nth-of-type(1n+2)>div {
   margin-left: .4rem;
   margin-right: .4rem;
   border-radius: 1.3rem;
-  border-color: #333333;
 }
 
 .footer-top > div > ul > li > button:hover {
@@ -1003,7 +1002,6 @@ main>article:nth-of-type(1n+2)>div {
     margin-left: .2rem;
     margin-right: .2rem;
     border-radius: 1.15rem;
-    border-color: #333333;
   }
 
   .footer-bottom > div {
