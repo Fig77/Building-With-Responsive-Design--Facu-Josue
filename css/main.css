@@ -56,7 +56,13 @@ body {
   padding-right: 1em;
 }
 
-.article-headers-a:link {
+.article-headers-a {
+  font-size: 0.8rem;
+  font-family: "Montserrat";
+}
+
+.article-headers-a:link,
+.article-headers-a:visited {
   color: #f42;
 }
 
@@ -65,19 +71,7 @@ body {
   text-decoration: underline;
 }
 
-.article-headers-a:visited {
-  color: #f42;
-}
-
-.article-headers-a {
-  font-size: 0.8rem;
-  font-family: "Montserrat";
-}
-
-.link-default-article:link {
-  color: #000;
-}
-
+.link-default-article:link,
 .link-default-article:visited {
   color: #000;
 }
@@ -107,7 +101,7 @@ body {
 
 /* Header */
 
-/* nav-top */
+/* Header - nav-top */
 
 .nav-top {
   height: 2em;
@@ -145,7 +139,7 @@ body {
   color: #fff;
 }
 
-/* styling of sticky nav bar */
+/* Header - styling of sticky nav bar */
 
 .nav-sticky {
   height: 3em;
@@ -201,7 +195,7 @@ body {
   color: #aaa;
 }
 
-/* hamburguer button top nav */
+/* Header - hamburguer button top nav */
 
 .hamburguer-button {
   display: none;
@@ -610,8 +604,6 @@ main > article:nth-of-type(1n+2) > div {
   font-size: 0.8rem;
 }
 
-.img-misc {}
-
 /* TAGG::Article-Misc-Section-Inner div */
 
 .inner-div-misc {
@@ -883,7 +875,7 @@ main > article:nth-of-type(1n+2) > div {
   .hide-on-small {
     display: none;
   }
-
+  
   .nav-sticky {
     justify-content: flex-end;
   }
@@ -899,13 +891,13 @@ main > article:nth-of-type(1n+2) > div {
     padding: 0;
   }
 
-  #test-div {
+  #nav-sticky-div-right {
     padding: 0;
     height: 3em;
     width: 6em;
   }
 
-  #test-div > a {
+  #nav-sticky-div-right > a {
     width: 3em;
     text-align: center;
   }
@@ -992,6 +984,7 @@ main > article:nth-of-type(1n+2) > div {
     align-items: center;
     justify-content: center;
   }
+  
   .footer-top > div > ul > li > button {
     background-color: #333333;
     color: #fff;
@@ -1016,6 +1009,7 @@ main > article:nth-of-type(1n+2) > div {
   .div-header-article-misc {
     align-content: flex-end;
   }
+  
 }
 
 /* Rules that applies last */
