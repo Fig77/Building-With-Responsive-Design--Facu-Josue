@@ -102,4 +102,4 @@ Project Link: [Project repo](https://github.com/Fig77/Building-With-Responsive-D
 [contributors-url]: https://github.com/Fig77/Building-With-Responsive-Design--Facu-Josue/graphs/contributors
 [issues-shield]: https://img.shields.io/badge/issues-0-%2300ff00
 [issues-url]: https://github.com/Fig77/Building-With-Responsive-Design--Facu-Josue/issues
-[product-screenshot]: img/producto_ss.jpg
+[product-screenshot]: img/product_ss.jpg
