@@ -61,6 +61,12 @@ body {
   font-family: "Montserrat";
 }
 
+.article-headers-a > h2{
+  font-size: 1.3rem;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;  
+}
+
 .article-headers-a:link,
 .article-headers-a:visited {
   color: #f42;
@@ -358,18 +364,18 @@ main > article:nth-of-type(1n+2) > div {
   max-width: 250px;
 }
 
-.latest-news-article > h3 > span {
+.latest-news-article > span > span {
   font-size: 0.6rem;
   color: #6b6b6b;
 }
 
-.latest-news-article > h3 > span > a:link {
+.latest-news-article > span > span > a:link {
   color: #6b6b6b;
   font-size: 0.7rem;
   padding-right: 0.2rem;
 }
 
-.latest-news-article > h3 > span > a:visited {
+.latest-news-article > span > span > a:visited {
   color: #6b6b6b;
 }
 
@@ -577,6 +583,7 @@ main > article:nth-of-type(1n+2) > div {
   font-size: 0.8rem;
   font-weight: 400;
   font-family: "Exo 2", "Montserrat";
+  color: #fff;
 }
 
 .h3-article-misc {
@@ -718,7 +725,7 @@ main > article:nth-of-type(1n+2) > div {
   color:#555;
   font-weight: 100;
 }
-.price-tag label {
+.price-tag span {
   font-size: 0.7rem;
   text-decoration-line: line-through;
   color: #aaa;
