@@ -47,12 +47,12 @@ This is our fifth collaborative Microverse Project.
   1. Visit The Next Web and poke around their home page. Play with changing the window width and see how the site changes (for instance when the sidebar gets hidden).
   2. Follow the instructions atop the Google Homepage project to set up a Github repository for this project (of course you’ll need to change the title).
   3. Create a new HTML document.
-  4. Think about all the elements on the page and how they are grouped together.
+  4. Think about all the elements on the page and how they are grouped.
   5. Try to discover which browser widths are “breakpoints” where element properties change (e.g. the sidebar disappearing). Make a plan for which elements need to be modified at which widths.
-  6. Lay out the basic structure of the page using empty semantic HTML elements that are appropriately sized and positioned. You may want to make their background colors different so you can see them. Don’t forget to use your browser’s developer tools (right click on the page, click “inspect element”)!
+  6. Layout the basic structure of the page using empty semantic HTML elements that are appropriately sized and positioned. You may want to make their background colors different so you can see them. Don’t forget to use your browser’s developer tools (right-click on the page, click “inspect element”)!
   7. Now – before you’ve filled in any of these divs – add in the media queries and positioning/floating attributes that are needed to make them rearrange as necessary when the browser changes sizes.
   8. Once you’ve got the page layout performing as it should, fill in the divs and style them to look like the original homepage. Don’t get lost in the details – it’s okay if it isn’t exact.
-  9. Double check that all the elements still behave just like the original when the browser size is changed.
+  9. Double-check that all the elements still behave just like the original when the browser size is changed.
   10. Push your solution to Github.
 
 
@@ -62,7 +62,7 @@ This is our fifth collaborative Microverse Project.
 
 
 ### Built With
-This project was built using raw html and css.
+This project was built using raw HTML and CSS.
 
 <!-- USAGE EXAMPLES -->
 ## Use
