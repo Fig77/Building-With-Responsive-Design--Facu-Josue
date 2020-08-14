@@ -35,21 +35,21 @@ Collaborative project which object is to build a responsive clone of a news webs
 ### Built With
 This project was built using raw HTML and CSS.
 
-## Screenshots
+### Screenshots
 ![Project Screen Shot][product-screenshot]
 
 <!-- USAGE EXAMPLES -->
-## Use
+### Use
 
 It's not a dynamic webpage, just a static one. So there is no use involved.
 
 <!-- ROADMAP -->
-## Roadmap
+### Roadmap
 
 See the [open issues](https://github.com/Fig77/Building-With-Responsive-Design--Facu-Josue/issues/issues) for a list of proposed features (and known issues).
 
 <!-- CONTACT -->
-## Contact
+### Contact
 
 Facundo Iglesias - [Github profile](https://github.com/Fig77)
 <br>
@@ -57,7 +57,7 @@ Josue Brigido - [Github profile](https://github.com/kalavhan)
 
 Project Link: [Project repo](https://github.com/Fig77/Building-With-Responsive-Design--Facu-Josue)
 
-## License
+### License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
